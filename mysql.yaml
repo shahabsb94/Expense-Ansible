@@ -15,5 +15,4 @@
 
 # Next, We need to change the default root password in order to start using the database service. Use password ExpenseApp@1 or any other as per your choice.
 
-    - name: connect to mysql Server
-      
+  #  - name: connect to mysql Server
