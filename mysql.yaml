@@ -15,4 +15,14 @@
 
 # Next, We need to change the default root password in order to start using the database service. Use password ExpenseApp@1 or any other as per your choice.
 
-  #  - name: connect to mysql Server
+    - name: connect to mysql Server
+      community.mysql.mysql_info:
+        login_user: root
+        login_password: ExpenseApp@1
+        login_host: mysql.meetshabu.online
+      register: mysql_info
+    
+    - name: Print the output of mysql
+      amsible.builtin.debug:
+        msg: " mysql info is {{ mysql_info }}"
+
