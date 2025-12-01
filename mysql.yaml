@@ -2,7 +2,7 @@
   hosts: mysql
   become: yes
   tasks:
-    - name: Install mysql server
+    - name: Install MySQL Server 8.0.x
       ansible.builtin.package:
         name: mysql-server
         state: installed
