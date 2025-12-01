@@ -23,6 +23,6 @@
       register: mysql_info
     
     - name: Print the output of mysql
-      amsible.builtin.debug:
+      ansible.builtin.debug:
         msg: " mysql info is {{ mysql_info }}"
 
